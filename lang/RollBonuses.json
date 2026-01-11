@@ -1,0 +1,812 @@
+{
+    "ckl-roll-bonuses": {
+        "ac-mod": "{mod} AC",
+        "acp-mod": "{mod} 防具检定减值",
+        "add-healing-formula": "添加治疗公式",
+        "alignment": {
+            "lawful": "守序",
+            "chaotic": "混乱",
+            "good": "善良",
+            "evil": "邪恶"
+        },
+        "all-crafts": "工艺 (全部)",
+        "all-knowledges": "知识 (全部)",
+        "all-performs": "表演 (全部)",
+        "all-professions": "职业 (全部)",
+        "all-spells": "所有法术",
+        "any-target-except": "任意目标，除了：",
+        "bane-type": "{type} 破敌",
+        "bane-type-subtype": "{type} ({subtype}) 破敌",
+        "base-dice": "基础骰子",
+        "bonus-header-labels": {
+            "bonus": "加值",
+            "conditional-bonus": "条件性加值",
+            "target": "目标",
+            "target-override": "目标覆盖",
+            "specific-bonus": "特定加值",
+            "ammo": "弹药加值"
+        },
+        "bonuses": {
+            "label": {
+                "ac": "防御等级 (AC)",
+                "action": "特定动作",
+                "action-type": "动作类型",
+                "action-type-radio": "动作类型逻辑",
+                "action-type-types": "动作类型列表",
+                "action-type-types-choices": {
+                    "is-melee": "近战攻击",
+                    "is-natural": "天生武器攻击",
+                    "is-natural-secondary": "次要天生武器攻击",
+                    "is-physical": "物理物品",
+                    "is-ranged": "远程攻击",
+                    "is-spell": "法术",
+                    "is-thrown": "投掷武器",
+                    "is-weapon": "武器"
+                },
+                "agile": "敏捷 (Agile)",
+                "alignment": "目标拥有阵营",
+                "all": "全部",
+                "ammo-attack": "通用攻击加值",
+                "ammo-damage": "伤害",
+                "ammo-effect": "效果备注",
+                "ammo-enhancement": "基础增强加值",
+                "ammo-enhancement-stacks": "堆叠增强加值",
+                "armor-focus": "护甲专攻 (Armor Focus)",
+                "armor-focus-improved": "精通护甲专攻 (Improved Armor Focus)",
+                "attack": "攻击加值",
+                "attack-crit-only": "仅用于重击确认",
+                "bane": "破敌 (Bane)",
+                "change-modification": "变更修饰符",
+                "change-modification-formula": "变更修饰公式",
+                "change-modification-set-type": "变更修饰类型",
+                "cl": "施法者等级 (CL)",
+                "condition": "拥有状态",
+                "condition-target": "目标拥有状态",
+                "conditional-modifiers": "条件性调整值",
+                "crit-keen": "锋锐 (Keen)",
+                "crit-mult": "重击倍率",
+                "crit-offset": "重击范围偏移",
+                "crit": "重击 (Critical)",
+                "damage": "伤害",
+                "damage-type": "伤害类型",
+                "dc": "DC (难度等级)",
+                "devastating-strike": "毁灭打击 (Devastating Strike)",
+                "devastating-strike-improved": "精通毁灭打击",
+                "dice-transform": "骰子转换",
+                "dice-transform-priority": "优先级",
+                "effective-size": "有效体型",
+                "elemental-cl": "元素施法者等级",
+                "elemental-dc": "元素法术 DC",
+                "elemental-focus": "元素专攻 (Elemental Focus)",
+                "elemental-focus-greater": "高等元素专攻",
+                "elemental-focus-mythic": "神话元素专攻",
+                "enh": "增强加值",
+                "enh-stacks": "增强加值 (可堆叠)",
+                "fates-favored": "天命所归 (Fate's Favored)",
+                "finesse-bonus": "娴熟 (Finesse)",
+                "finesse-override": "强制娴熟",
+                "finesse-target": "娴熟目标",
+                "flanking-immunity": "免疫夹击",
+                "footnote": "脚注",
+                "fortune": "福运 (Fortune/双骰取高)",
+                "function": "自定义目标函数",
+                "function-player-label": "向玩家显示的函数标签",
+                "furious-focus": "猛力专攻 (Furious Focus)",
+                "gang-up": "联手 (Gang Up)",
+                "has-boolean-flag": "拥有布尔标记",
+                "has-boolean-flag-target": "目标拥有布尔标记",
+                "initiative": "先攻",
+                "inspiration": "灵感 (Inspiration)",
+                "inspiration-amazing": "惊人灵感 (Amazing Inspiration)",
+                "inspiration-extra-die": "额外灵感骰",
+                "inspiration-focused": "专注灵感 (Focused Inspiration)",
+                "inspiration-tenacious": "顽强灵感 (Tenacious Inspiration)",
+                "inspiration-true": "真实灵感 (True Inspiration)",
+                "is-flanking": "正在夹击",
+                "is-flanking-with": "与盟友夹击",
+                "is-target-within-range": "目标在范围内",
+                "is-target-within-range-max": "最大距离 ({unit})",
+                "is-target-within-range-min": "最小距离 ({unit})",
+                "item": "特定物品",
+                "martial-focus": "武术专攻 (Martial Focus)",
+                "maximize-damage": "伤害极效",
+                "menacing": "威吓 (Menacing)",
+                "misfortune": "厄运 (Misfortune/双骰取低)",
+                "outflank": "侧面包抄 (Outflank)",
+                "outflank-improved": "精通侧面包抄",
+                "pack-flanking": "团队夹击 (Pack Flanking)",
+                "precise-shot": "精准射击 (Precise Shot)",
+                "proficiency": "擅长 (Proficiency)",
+                "ranged-increment-penalty": "远程射程减值修正",
+                "ranged-increment-penalty-increment-penalty-offset": "射程减值降低",
+                "ranged-increment-penalty-increment-range-offset": "射程增量偏移",
+                "ranged-increment-penalty-max-increment-offset": "最大射程增量偏移",
+                "ranged-increment-penalty-penalty-offset": "总减值降低",
+                "roll-untrained": "未受训检定",
+                "script-call": "脚本调用 (Script Call)",
+                "save": "豁免检定",
+                "save-chosen": "选择的豁免",
+                "save-input": "豁免变更",
+                "self": "自身目标",
+                "skill": "技能",
+                "skill-chosen": "选择的技能",
+                "skill-input": "技能变更",
+                "skill-rank-override": "技能等级覆盖",
+                "skill-rank-override-formula": "技能等级覆盖公式",
+                "skill-rank-override-selected": "要覆盖的技能",
+                "snake-sidewind": "蛇形步 (Snake Sidewind)",
+                "solo-tactics": "独行战术 (Solo Tactics)",
+                "solo-tactics-allies": "特定盟友 (可选)",
+                "spell": "特定法术",
+                "spell-descriptor": "法术描述符",
+                "spell-focus": "法术专攻 (Spell Focus)",
+                "spell-focus-greater": "高等法术专攻",
+                "spell-focus-mythic": "神话法术专攻",
+                "spell-school": "法术学派",
+                "spell-subschool": "法术子学派",
+                "spell-specialization": "法术专精 (Spell Specialization)",
+                "swarming": "蜂拥 (Swarming)",
+                "token": "目标 Token",
+                "token-invert": "反选目标 Token",
+                "uncanny-dodge-improved": "精通直觉闪避",
+                "underfoot-assault": "下盘攻击 (Underfoot Assault)",
+                "versatile-performance": "多才多艺 (Versatile Performance)",
+                "versatile-performance-expanded": "扩展多才多艺",
+                "versatile-training": "多才训练 - 武器组",
+                "versatile-training-selected": "多才训练 - 选定技能",
+                "vital-strike": "致命一击 (Vital Strike)",
+                "vital-strike-enabled": "默认启用",
+                "vital-strike-greater": "高等致命一击",
+                "vital-strike-improved": "精通致命一击",
+                "vital-strike-mythic": "神话致命一击",
+                "weapon-focus": "武器专攻 (Weapon Focus)",
+                "weapon-focus-greater": "高等武器专攻",
+                "weapon-focus-mythic": "神话武器专攻",
+                "weapon-focus-racial": "种族武器专攻",
+                "weapon-group": "武器组",
+                "weapon-group-override": "武器组覆盖",
+                "weapon-specialization": "武器专精 (Weapon Specialization)",
+                "weapon-specialization-greater": "高等武器专精",
+                "weapon-type": "武器类型",
+                "weapon-type-override": "武器类型覆盖",
+                "weapon": "特定武器与攻击",
+                "when-active": "当物品激活/装备时",
+                "when-in-combat": "当战斗中时",
+                "while-adjacent-to": "当邻接于",
+                "while-sharing-with": "当共享占据于"
+            },
+            "tooltip": {
+                "ac": "为角色的防御等级 (AC) 添加条件性加值。",
+                "action": "给予特定动作加值。",
+                "action-type": "当匹配给定的动作类型时激活加值。",
+                "action-type-radio": "选择动作类型是作为组还是单独评估。<br><br>全部 (All)：仅当匹配所有动作类型时应用加值。<br><br>任意 (Any)：匹配任意动作类型即应用加值。",
+                "agile": "攻击获得敏捷上伤效果。",
+                "alignment": "当目标 Token 拥有所选阵营时激活加值。",
+                "all": "激活所有可接受该加值的动作。",
+                "ammo-attack": "使用此弹药时，此攻击加值将叠加在任何其他攻击加值之上。",
+                "ammo-damage": "使用此弹药时添加的特定类型伤害加值。",
+                "ammo-effect": "使用此箭矢攻击时，同时显示此效果备注。",
+                "ammo-enhancement": "弹药的基础增强加值。",
+                "ammo-enhancement-stacks": "用于可堆叠的增强加值，如破敌。",
+                "armor-focus": "所选护甲的 AC 增加 1。护甲必须正确配置装备基础类型。",
+                "armor-focus-improved": "所选护甲的防具检定减值 (ACP) 减少 1。护甲必须正确配置装备基础类型。",
+                "attack": "增加攻击的公式输入。",
+                "attack-crit-only": "此攻击加值是否仅应用于重击确认检定。",
+                "bane": "当目标为所选生物类型时，攻击获得 +2 增强加值和 +2d6 伤害。",
+                "change-modification": "修改选定的变更类型。类似‘天命所归’，但你可以自定义效果。",
+                "change-modification-formula": "用于修改指定变更类型的公式和类型。",
+                "change-modification-set-type": "确定变更修饰是被公式覆盖还是由公式修改。",
+                "cl": "修改法术的施法者等级 (CL)。",
+                "condition": "当角色拥有特定状态时激活加值。",
+                "conditional-modifiers": "给予目标动作条件性调整值。",
+                "creature-type": "当当前目标拥有任何所选生物类型时应用。",
+                "creature-subtype": "当当前目标拥有任何所选生物子类型时应用。",
+                "crit-keen": "重击威胁范围翻倍。",
+                "crit-mult": "增加或减少重击倍率。",
+                "crit-offset": "修改重击威胁范围。此修改发生在锋锐 (Keen) 之后。",
+                "crit": "修改重击范围和/或倍率。",
+                "damage": "为目标动作添加额外伤害。",
+                "damage-type": "加值将应用于造成所选伤害类型的动作。",
+                "dc": "修改法术和能力的 DC。",
+                "devastating-strike": "使用致命一击时增加伤害",
+                "devastating-strike-improved": "使用致命一击时增加重击确认加值",
+                "dice-transform": "转换目标动作的基础伤害骰。",
+                "dice-transform-priority": "多次转换的顺序。数字越高越先处理。",
+                "effective-size": "增加 sizeRoll 公式的有效体型。用于如铅刃术 (Lead Blades)、重力弓 (Gravity Bow) 等 Buff。",
+                "elemental-cl": "修改所选元素法术的 CL。",
+                "elemental-dc": "修改所选元素法术的 DC。",
+                "elemental-focus": "所选元素法术 +1 DC。",
+                "elemental-focus-greater": "进一步增加元素专攻的元素法术 +1 DC。",
+                "elemental-focus-mythic": "元素专攻加值翻倍。",
+                "enh": "修改攻击或武器的增强加值。",
+                "enh-stacks": "修改攻击或武器的增强加值（堆叠）。",
+                "fates-favored": "所有幸运 (Luck) 加值增加 1。",
+                "finesse-bonus": "攻击检定使用敏捷代替力量。",
+                "finesse-override": "为通常没有武器属性的物品添加娴熟 (Finesse) 属性。",
+                "finesse-target": "对所有可娴熟的目标激活加值。这要求武器/攻击具有娴熟属性，属于天生武器组，或拥有 `finesse-override` 布尔标记。",
+                "flanking-immunity": "免疫‘正在夹击目标’和‘夹击全局加值’。",
+                "footnote": "目标攻击将包含此脚注。",
+                "fortune": "双骰取高 (Fortune)。多个加值可叠加。",
+                "function": "执行自定义函数以确定目标。详见文档示例。",
+                "function-player-label": "配置时向玩家显示的标签。玩家无法编辑该函数。",
+                "furious-focus": "抵消每轮第一次攻击的猛力攻击减值。",
+                "gang-up": "如果至少两名盟友威胁目标，则你视为威胁该目标。",
+                "has-boolean-flag": "基于布尔标记是否激活来应用加值。",
+                "initiative": "修改角色的先攻检定",
+                "inspiration": "可以对指定技能免费使用灵感。",
+                "inspiration-amazing": "灵感骰增加一级。",
+                "inspiration-focused": "所选技能的灵感骰增加一级。",
+                "inspiration-tenacious": "投掷灵感时，额外投一个骰子并取最高。",
+                "inspiration-true": "可以对所有技能免费使用灵感。",
+                "is-flanking": "当夹击当前目标时激活加值。",
+                "is-flanking-with": "当与任何指定盟友邻接时激活加值。",
+                "is-target-within-range": "当所有目标都在指定范围内时激活。",
+                "is-target-within-range-min": "当所有目标 Token 至少在该距离之外时激活。",
+                "is-target-within-range-max": "当所有目标 Token 至多在该距离之内时激活。",
+                "item": "使用这些特定物品时应用加值。",
+                "martial-focus": "所选武器组伤害 +1。攻击和武器必须正确配置武器组。",
+                "maximize-damage": "使目标能力的伤害骰极效化。",
+                "menacing": "对于你当前威胁的敌人，任何夹击加值 +2。",
+                "misfortune": "双骰取低 (Misfortune)。多个加值可叠加。",
+                "outflank": "团队专长，夹击加值增加 +2。",
+                "outflank-improved": "团队专长，增加夹击位置选项。",
+                "pack-flanking": "如果你和你的伙伴都拥有此专长，且邻接并威胁同一目标，则视为正在夹击。",
+                "precise-shot": "抵消射入近战的减值。",
+                "proficiency": "为此物品添加擅长（通常需要配合武器组覆盖）。",
+                "ranged-increment-penalty": "修改与远程武器射程增量相关的减值。",
+                "ranged-increment-penalty-increment-penalty-offset": "修改最大射程增量的数量。",
+                "ranged-increment-penalty-increment-range-offset": "修改每个增量的射程。",
+                "ranged-increment-penalty-max-increment-offset": "减少每个增量的减值。",
+                "ranged-increment-penalty-penalty-offset": "减少总减值。",
+                "roll-untrained": "标记技能为可未受训检定。",
+                "script-call": "配置针对目标动作执行的脚本调用。你也可以将宏拖到此处。",
+                "save": "对豁免检定应用加值。",
+                "self": "对同一物品上的所有动作应用加值。",
+                "skill": "对技能检定应用加值。",
+                "skill-rank-override": "将所选技能的等级设为特定值。适用于如‘博学头带’等物品。",
+                "skill-rank-override-formula": "将所选技能的等级设为特定值的公式。适用于如‘博学头带’等物品。",
+                "skill-rank-override-selected": "要被提供的公式覆盖的技能。",
+                "snake-sidewind": "当察言观色的最大结果高于最大攻击检定时，使用察言观色进行重击确认。",
+                "solo-tactics": "视为盟友拥有你的团队专长（目前用于侧面包抄和精通侧面包抄）。",
+                "solo-tactics-allies": "限制为特定盟友（留空则应用于所有盟友）。",
+                "spell-school": "对所选学派的法术应用加值。",
+                "spell-subschool": "对所选子学派的法术应用加值。",
+                "spell-specialization": "对于你拥有法术专攻的学派中的某个法术，CL 增加 2。",
+                "spell": "对这些特定法术的动作应用加值。",
+                "spell-focus": "所选法术学派 +1 DC。",
+                "spell-focus-greater": "进一步增加法术专攻的学派 +1 DC。",
+                "spell-focus-mythic": "法术专攻加值翻倍。",
+                "spell-descriptor": "对带有选定描述符的法术应用加值。",
+                "swarming": "当与拥有此能力的盟友共享方格时，视为夹击目标。",
+                "token": "当选中特定 Token 时应用加值。激活此 Buff 时，会弹出一个对话框允许你从场景中选择 Token。",
+                "token-invert": "反转选择，意味着当目标不是所选 Token 时应用加值。",
+                "uncanny-dodge-improved": "免疫夹击，除非被更高等级的游荡者攻击。必须放置在职业能力上。",
+                "underfoot-assault": "当与对手共享方格且邻接盟友时，视为夹击该对手。",
+                "versatile-performance": "用所选的表演技能代替两个技能。",
+                "versatile-performance-expanded": "为所选表演技能关联第三个技能。",
+                "versatile-training": "对于关联武器组的两个技能，使用 BAB 代替技能等级。",
+                "versatile-training-selected": "这些技能将使用 BAB 作为等级。",
+                "vital-strike": "基于武器伤害为攻击动作添加额外伤害。",
+                "vital-strike-mythic": "使用致命一击专长时，也包括任何在重击时通常会翻倍的加值。",
+                "vital-strike-enabled": "是否在攻击对话框中默认勾选致命一击。",
+                "vital-strike-enabled-current": "当前默认启用。",
+                "weapon-focus": "所选武器类型攻击检定 +1。攻击和武器必须正确配置装备基础类型。",
+                "weapon-focus-greater": "所选武器类型的武器专攻攻击检定再 +1。",
+                "weapon-group": "使用所选武器组的武器时应用加值。攻击和武器必须正确配置武器组。",
+                "weapon-group-override": "为通常没有武器组的物品添加武器组。",
+                "weapon-specialization": "所选武器类型伤害检定 +2。攻击和武器必须正确配置装备基础类型。",
+                "weapon-specialization-greater": "所选武器类型的武器专精伤害检定再 +2。",
+                "weapon-focus-mythic": "武器专攻攻击加值翻倍。",
+                "weapon-focus-racial": "所选种族武器攻击检定 +1。武器必须标记有该种族才能应用加值。",
+                "weapon-type": "使用所选武器时应用加值。攻击和武器必须正确配置装备基础类型。",
+                "weapon-type-override": "为通常没有武器类型的物品添加武器类型。这等同于武器的装备基础类型。",
+                "weapon": "选择特定的攻击和武器应用加值。",
+                "when-active": "当指定的 Buff/装备/专长等处于激活或装备状态时应用加值。",
+                "when-in-combat": "当此角色在战斗中时激活。",
+                "while-adjacent-to": "当邻接任何指定盟友时激活。",
+                "while-sharing-with": "当与任何指定盟友共享方格时激活。"
+            }
+        },
+        "cancel": "取消",
+        "cl-mod": "{mod} CL",
+        "cl-label": "CL ({label})",
+        "cl-label-mod": "{mod} CL ({label})",
+        "crit-damage-label": {
+            "crit": " (仅重击)",
+            "nonCrit": " (仅非重击)",
+            "normal": ""
+        },
+        "crit-mult-mod": "重击倍率 ({mod})",
+        "crit-mult-offset-all": "重击倍率偏移 (全部)",
+        "crit-mult-offset-self": "重击倍率偏移 (自身)",
+        "crit-mult-offset-targeted": "重击倍率偏移 ({id})",
+        "crit-mult": "重击倍率",
+        "crit-offset-all": "重击范围偏移 (全部)",
+        "crit-offset-mod": "重击威胁 ({mod})",
+        "crit-offset-self": "重击范围偏移 (自身)",
+        "crit-offset-targeted": "重击范围偏移 ({id})",
+        "crit-offset": "重击范围偏移",
+        "damage-app": {
+            "add-effect-damage": "添加效果伤害",
+            "add-typed-damage": "添加类型伤害",
+            "effect-formula": "效果伤害公式",
+            "typed-formula": "类型伤害公式"
+        },
+        "damage-formula": "伤害加值公式",
+        "dc-label-mod": "{mod} DC ({label})",
+        "dc-mod": "{mod} DC",
+        "driver": "职业 (驾驶)",
+        "enh-mod-stacks": "{mod} 增强加值 (堆叠)",
+        "enh-mod": "增强加值 -> {mod}",
+        "effective-size": {
+            "hint": "体型: {mod}"
+        },
+        "fluent-description": {
+            "alignment": "当目标拥有阵营: {alignment}",
+            "all": "全部",
+            "condition-self": "当你拥有状态: {condition}",
+            "condition-target": "当目标拥有状态: {condition}",
+            "creature-subtype": "当目标拥有生物子类型: {subtype}",
+            "creature-type": "当目标拥有生物类型: {type}",
+            "has-boolean-flag-self": "当你拥有布尔标记: {flag}",
+            "has-boolean-flag-target": "当 {target} 拥有布尔标记: {flag}",
+            "is-flanking": "当夹击目标时",
+            "is-flanking-with": "当与盟友夹击目标: {ally}",
+            "is-target-within-range": "当目标在范围内: {range}",
+            "token": "当以之为目标: {token}",
+            "token-inverted": "当目标不是: {token}",
+            "when-active-equipment": "当装备: {item}",
+            "when-active-feature": "当激活: {item}",
+            "when-in-combat": "当在战斗中",
+            "while-adjacent-to": "当邻接于: {ally}",
+            "while-sharing-with": "当共享方格于: {ally}"
+        },
+        "fortune": "福运 (Fortune)",
+        "global-bonus": {
+            "actor": {
+                "description": "GM 为此世界启用的全局加值。如果不适用于此特定角色，可以在此处单独禁用每个设置。",
+                "disable": "为此角色禁用全局加值"
+            },
+            "attack-label": {
+                "higher-ground": "高地",
+                "range-increment-penalty": "远程减值 ({range}{units})",
+                "shoot-into-melee": "射入近战"
+            },
+            "dialog-disable": {
+                "range-increment-penalty": "跳过射程增量检查",
+                "require-melee-threaten": "忽略近战范围"
+            },
+            "disabled-footnote": {
+                "range-increment-penalty": "跳过增量检查",
+                "require-melee-threaten": "跳过近战要求"
+            },
+            "label": {
+                "flanking": "夹击 (Flanking)",
+                "higher-ground": "高地近战加值",
+                "range-increment-penalty": "远程射程减值",
+                "shoot-into-melee": "射入近战",
+                "require-melee-threaten": "要求近战威胁"
+            },
+            "warning": {
+                "range-increment-error-plural": "最远的目标 ({distance}{units}) 超出了你的最大射程 ({max}{units})。",
+                "range-increment-error-singular": "目标 ({distance}{units}) 超出了你的最大射程 ({max}{units})。",
+                "require-melee-threaten-plural": "你未威胁至少一个目标。",
+                "require-melee-threaten-singular": "你未威胁目标。"
+            }
+        },
+        "global-settings": {
+            "application": {
+                "description": "这尝试自动化手动处理很繁琐的全局加值。其中一些是尽力而为，在大多数情况下应该有效，但由于其性质，某些可能会有不可避免的小问题。",
+                "hint": "配置可自动化的特定战斗加值。这些是全局战斗选项，不意味着为特定专长或能力配置，而是适用于所有人。",
+                "label": "配置全局加值",
+                "title": "全局加值",
+                "section": {
+                    "flanking": {
+                        "description": "尝试自动添加适当的夹击加值。该模组包括各种加值，以考虑增加加值和修改定位方式的不同专长/能力。请务必查看日志以了解这些能力的更多详细信息。",
+                        "issues": "在不邻接目标的情况下对角线夹击可能在技术上不准确，但对于大多数场景（即，如果你将地图旋转 45 度，它肯定是夹击）来说应该足够接近。"
+                    },
+                    "higher-ground": {
+                        "description": "当从较高海拔进行近战攻击时，+1 攻击。",
+                        "issues": ""
+                    },
+                    "range-increment-penalty": {
+                        "description": "添加远程增量攻击减值。启用此功能还将启用修改远程攻击减值和射程增量的加值。",
+                        "issues": "这在大多数情况下应该完全有效。我发现唯一可能添加错误减值的情况是，如果一个大型（或更大）Token 部分被墙壁遮挡。可见部分可能比最近的部分更远。该模组仅根据目标的最近部分进行计算，无论墙壁如何。"
+                    },
+                    "shoot-into-melee": {
+                        "description": "添加射入近战的减值。这要求你的盟友与目标相邻，你的目标与你和你的盟友有不同的态度，并且至少你的目标或你的盟友威胁另一方（威胁需要装备近战武器或天生攻击）。这也添加了精准射击的特定加值。确保打开精准射击专长以便配置。这正确考虑了体型差异。",
+                        "issues": "如果你射击的是一个参与近战的生物，且该生物足够大，使你可以瞄准离你的盟友至少 10 尺远的点，通常可以忽略此减值（不考虑精准射击）。我无法考虑到那些“可以射击的点”是否不在范围内或不可见——如果生物足够大，减值将自动抵消。"
+                    },
+                    "require-melee-threaten": {
+                        "description": "如果攻击者未威胁目标，则拒绝近战攻击。当使用近战动作时，如果目标超出范围，这将拒绝该动作。",
+                        "issues": "在某些情况下，即使目标不在范围内，GM 也允许对其进行近战攻击。要绕过此限制，你可以跳过针对 Token，或在攻击对话框中勾选“忽略近战范围”杂项复选框。"
+                    }
+                }
+            }
+        },
+        "hint-missing-bonus": "缺少加值，点击添加",
+        "hint-missing-target": "缺少目标，点击添加",
+        "inspiration-amazing-die": "灵感骰: {die}",
+        "invalid-uncanny-dodge-class": "必须配置职业关联。",
+        "invalid-uncanny-dodge-item": "必须放置在职业能力上。",
+        "invalid-override": "这对该物品类型无效——请直接编辑物品详情。",
+        "item-app": {
+            "description": "加值仅在使用所选物品时应用。右键单击任何行以打开该物品卡以进行进一步验证。",
+            "description-actions": "加值仅在使用所选动作时应用。右键单击任何行以打开该动作卡以进行进一步验证（或单击标题以打开物品）。",
+            "description-when-active": "这些加值仅在目标物品启用或装备时激活。例如，仅在狂暴时应用的次要加值。",
+            "title": "物品选择器",
+            "title-action": "动作选择器 - {name}"
+        },
+        "item-hints": {
+            "skill-rank-override": "{skills} (->{rank})"
+        },
+        "item-name-app": {
+            "description": "各种专长和能力尝试在首次使用时自动配置自身。这是基于其内部 ID 或名称。根据设置方式，它可能没有匹配的内部 ID。此时它将使用名称尝试匹配并查看需要初始化哪些值。由于此模组目前仅提供英文版，这些设置允许您（GM）提供翻译名称，这些名称将自动用于配置这些专长和能力。",
+            "english-name": "英文名称",
+            "hint": "为 <b>Roll Bonuses</b> 尝试自动配置的能力提供翻译（当游玩非英文游戏时）。",
+            "label": "打开配置",
+            "title": "物品名称翻译配置",
+            "translation": "翻译"
+        },
+        "keen": "锋锐 (Keen)",
+        "keen-all": "锋锐 (全部)",
+        "keen-id": "锋锐 ({id})",
+        "keen-self": "锋锐 (自身)",
+        "maximized": "极效",
+        "maximized-total": "极效: {total}",
+        "misfortune": "厄运 (Misfortune)",
+        "missing-bonuses": "未配置加值。",
+        "missing-conditional-target": "'{bonus}' 加值需要条件性目标才能正常工作。",
+        "missing-targets": "未配置目标。",
+        "modifiers": "调整值",
+        "ok": "确定",
+        "picker": {
+            "tabs": {
+                "specific": "特定加值",
+                "specific-description": "这些加值要么太具体，要么太宽泛，无法成为目标性加值。其中大多数是针对独特能力或专长的，或者是更广泛的，影响更全局的东西，不适合“目标性”系统。",
+                "targeted": "目标性加值",
+                "targeted-description": "目标性加值需要至少一个加值和至少一个目标。"
+            },
+            "bonuses": {
+                "label": "加值",
+                "tooltip": "这些是可以应用于你的能力的各种加值。"
+            },
+            "conditional-targets": {
+                "label": "条件性目标",
+                "tooltip": "如果满足特定条件，条件性目标将对所有适用的能力应用加值。"
+            },
+            "specific-bonuses": {
+                "label": "特定加值",
+                "tooltip": "特定加值是更具体的加值，不如通用加值可配置。这些以它们实现的特定能力命名。"
+            },
+            "target-overrides": {
+                "label": "可目标覆盖",
+                "tooltip": "这将数据添加到通常没有该数据的物品类型上，以便它与其他目标一起工作。例如，向法术添加“射线”武器类型以便它与武器专攻一起工作，或向攻击添加娴熟武器属性以便它与武器娴熟一起工作。"
+            },
+            "targets": {
+                "label": "目标",
+                "tooltip": "目标确定确切有哪些能力将受到加值的影响。"
+            }
+        },
+        "roll-bonuses": "骰子加值 (Roll Bonuses)",
+        "script-call-default-name": "脚本调用",
+        "script-call-dialog": {
+            "delete-script-message": "脚本一旦删除将无法恢复。<br>确定要删除此脚本吗？",
+            "delete-script-title": "删除脚本 - {name}",
+            "edit-macro-message": "你正试图编辑一个不由该物品拥有的引用宏。<br><br>修改此宏意味着你将直接编辑世界的宏。此宏的所有其他用法都将被修改。<br><br>确定要编辑此宏吗？",
+            "edit-macro-title": "编辑宏 - {name}"
+        },
+        "skill-rank-override": {
+            "skill-card-name": "{skillName} - ({sourceName} 等级: {rank})",
+            "skill-sheet-tip": "{itemName}\n将技能等级设为 {rank}。"
+        },
+        "skills": {
+            "config": "技能配置",
+            "inspiration": "灵感 (Inspiration)"
+        },
+        "skill-sheet": {
+            "inspiration": {
+                "invalid-skill-tip": "必须受训才能免费投掷 ({die})",
+                "skill-tip": "免费灵感 ({die})"
+            },
+            "inspiration-focused": {
+                "skill-tip": "灵感骰增加一级"
+            },
+            "inspiration-tenacious": {
+                "skill-tip": "额外投掷灵感骰，取最高"
+            },
+            "roll-untrained": {
+                "skill-tip": "可未受训检定"
+            }
+        },
+        "string-select.no-choices": "无有效选项。",
+        "target-choice": {
+            "self": "自身",
+            "target": "目标 Token"
+        },
+        "target-toggle": {
+            "all": "全部 (All)",
+            "any": "任意 (Any)",
+            "tooltip": "选择加值目标是作为组还是单独评估。<br><br>全部：仅当匹配所有目标时应用加值。<br><br>任意：匹配任意目标即应用加值。"
+        },
+        "targets": "目标",
+        "to-hit-mod": "{mod} 命中",
+        "versatile-performance": {
+            "add": "添加多才多艺",
+            "delete": "删除多才多艺",
+            "error": "多才多艺 - 无效技能 ID",
+            "header": "多才多艺",
+            "hint": "{base} -> {skills}",
+            "label": {
+                "expanded": "扩展",
+                "perform": "表演",
+                "skill1": "技能 1",
+                "skill2": "技能 2"
+            },
+            "replace-label": "{skill} (由 {base} 替代)",
+            "skill-tip": "可配合多才多艺使用 - {base} ({enabled})",
+            "title": "{skill} - 多才多艺"
+        },
+        "versatile-training": {
+            "description": "选择两个技能使用 BAB 代替其等级。",
+            "header": "多才训练",
+            "hint": "{skills}",
+            "skill-tip": "多才训练 - 使用 BAB ({bab}) 代替等级",
+            "title": "{skill} - 多才训练"
+        },
+        "with": "与",
+        "item-name-translations": {
+            "improved": {
+                "name": "精通 (Improved)",
+                "default": "精通"
+            },
+            "greater": {
+                "name": "高等 (Greater)",
+                "default": "高等"
+            },
+            "mythic": {
+                "name": "神话 (Mythic)",
+                "default": "神话"
+            },
+            "armor-focus": {
+                "name": "护甲专攻 (Armor Focus)",
+                "default": "护甲专攻"
+            },
+            "devastating-strike": {
+                "name": "毁灭打击 (Devastating Strike)",
+                "default": "毁灭打击"
+            },
+            "elemental-focus": {
+                "name": "元素专攻 (Elemental Focus)",
+                "default": "元素专攻"
+            },
+            "extreme-mood-swings": {
+                "name": "情绪大起大落 (Extreme Mood Swings)",
+                "default": "情绪大起大落"
+            },
+            "fates-favored": {
+                "name": "天命所归 (Fate's Favored)",
+                "default": "天命所归"
+            },
+            "flanking-immunity": {
+                "name": "免疫夹击 (Flanking Immunity)",
+                "default": "全域视野"
+            },
+            "furious-focus": {
+                "name": "猛力专攻 (Furious Focus)",
+                "default": "猛力专攻"
+            },
+            "gang-up": {
+                "name": "联手 (Gang Up)",
+                "default": "联手"
+            },
+            "inspiration": {
+                "name": "灵感 (Inspiration)",
+                "default": "灵感"
+            },
+            "inspiration-amazing": {
+                "name": "惊人灵感 (Amazing Inspiration)",
+                "default": "惊人灵感"
+            },
+            "inspiration-device-talent": {
+                "name": "装置天赋 (Device Talent)",
+                "default": "装置天赋"
+            },
+            "inspiration-empathy": {
+                "name": "共情 (Empathy)",
+                "default": "共情"
+            },
+            "inspiration-expanded": {
+                "name": "扩展灵感 (Expanded Inspiration)",
+                "default": "扩展灵感"
+            },
+            "inspiration-focused": {
+                "name": "专注灵感 (Focused Inspiration)",
+                "default": "专注灵感"
+            },
+            "inspiration-inspired-intelligence": {
+                "name": "启发智力 (Inspired Intelligence)",
+                "default": "启发智力"
+            },
+            "inspiration-tenacious": {
+                "name": "顽强灵感 (Tenacious Inspiration)",
+                "default": "顽强灵感"
+            },
+            "inspiration-true": {
+                "name": "真实灵感 (True Inspiration)",
+                "default": "真实灵感"
+            },
+            "inspiration-underworld": {
+                "name": "地下灵感 (Underworld Inspiration)",
+                "default": "地下灵感"
+            },
+            "inspiration-unconventional": {
+                "name": "非常规灵感 (Unconventional Inspiration)",
+                "default": "非常规灵感"
+            },
+            "martial-focus": {
+                "name": "武术专攻 (Martial Focus)",
+                "default": "武术专攻"
+            },
+            "outflank": {
+                "name": "侧面包抄 (Outflank)",
+                "default": "侧面包抄"
+            },
+            "pack-flanking": {
+                "name": "团队夹击 (Pack Flanking)",
+                "default": "团队夹击"
+            },
+            "precise-shot": {
+                "name": "精准射击 (Precise Shot)",
+                "default": "精准射击"
+            },
+            "snake-sidewind": {
+                "name": "蛇形步 (Snake Sidewind)",
+                "default": "蛇形步"
+            },
+            "solo-tactics": {
+                "name": "独行战术 (Solo Tactics)",
+                "default": "独行战术"
+            },
+            "spell-focus": {
+                "name": "法术专攻 (Spell Focus)",
+                "default": "法术专攻"
+            },
+            "spell-specialization": {
+                "name": "法术专精 (Spell Specialization)",
+                "default": "法术专精"
+            },
+            "swarming": {
+                "name": "蜂拥 (Swarming)",
+                "default": "蜂拥"
+            },
+            "uncanny-dodge": {
+                "name": "直觉闪避 (Uncanny Dodge)",
+                "default": "直觉闪避"
+            },
+            "underfoot-assault": {
+                "name": "下盘攻击 (Underfoot Assault)",
+                "default": "下盘攻击"
+            },
+            "versatile-performance": {
+                "name": "多才多艺 (Versatile Performance)",
+                "default": "多才多艺"
+            },
+            "versatile-performance-expanded": {
+                "name": "扩展多才多艺 (Expanded Versatility)",
+                "default": "扩展多才多艺"
+            },
+            "versatile-training": {
+                "name": "多才训练 (Versatile Training)",
+                "default": "多才训练"
+            },
+            "vital-strike": {
+                "name": "致命一击 (Vital Strike)",
+                "default": "致命一击"
+            },
+            "weapon-finesse": {
+                "name": "武器娴熟 (Weapon Finesse)",
+                "default": "武器娴熟"
+            },
+            "weapon-focus": {
+                "name": "武器专攻 (Weapon Focus)",
+                "default": "武器专攻"
+            },
+            "weapon-focus-racial": {
+                "name": "种族武器专攻 (Racial Weapon Focus)",
+                "default": "侏儒武器专攻"
+            },
+            "weapon-focus-racial-default-race": {
+                "name": "种族武器专攻 (默认种族)",
+                "default": "侏儒"
+            },
+            "weapon-specialization": {
+                "name": "武器专精 (Weapon Specialization)",
+                "default": "武器专精"
+            }
+        },
+        "settings": {
+            "allow-friendly-npc-selection": {
+                "name": "允许玩家查看所有友好 NPC",
+                "hint": "当使用条件性目标如“正在夹击（与特定盟友）”或“邻接于（盟友角色）”时，将其设置为 true 将允许你的玩家查看世界中定义的所有友好 NPC。如果设置为 false，他们只能选择玩家拥有的角色。"
+            },
+            "debug": {
+                "name": "调试模式",
+                "hint": "启用此选项以打开额外日志，这可能有助于追踪某些问题。默认为 `false`。"
+            },
+            "elephant-in-the-room": {
+                "name": "房中象 (Elephant in the Room)",
+                "hint": "如果使用名为“房中象 (Elephant in the Room)”的可选房规，请启用此选项（默认禁用）。这将关闭强制某些专长和能力使用正常 Pathfinder 规则的自动配置（例如武器专攻和武器专精），并允许你使用目标和加值手动自定义它们。"
+            },
+            "fortuneStacks": {
+                "name": "福运堆叠",
+                "hint": "如果为 true（默认），来自不同来源的多个福运/厄运将堆叠。因此你最终可能会得到 4d20kh。如果为 false，则多个福运/厄运最多只能有两个骰子。影响同一次检定的多个厄运和福运将相互抵消（例如 3 个不同的福运 vs 2 个不同的厄运意味着你“更幸运”，并将带着加值投骰。如果福运与厄运数量相等，则你“收支平衡”并正常投骰。）"
+            },
+            "weapon-focus-racial": {
+                "name": "种族武器专攻",
+                "hint": "你的‘种族法术专攻’专长的名称。官方仅存在‘侏儒武器专攻’，但这允许其他种族变体。这是为了支持翻译而无需翻译模组。",
+                "default": "侏儒武器专攻"
+            },
+            "weapon-focus-racial-default-race": {
+                "name": "种族武器专攻（默认种族）",
+                "hint": "要查找的默认种族。这是为了支持翻译而无需翻译模组。",
+                "default": "侏儒"
+            },
+            "should-auto-target-tokens": {
+                "name": "自动选择 Token",
+                "hint": "当设置为 true 且使用通用“目标 Token”时，启用该能力时将跳过对话框（如果你当前已选中 Token），并自动将那些 Token 设为目标。默认情况下（false），Token 目标对话框会打开并预选你当前选中的 Token，你需要验证这些是否是你实际想要的目标。"
+            },
+            "should-copy-flags": {
+                "name": "攻击创建时复制物品标记",
+                "hint": "当从武器创建攻击时（通过“战斗”标签页的“创建攻击”按钮添加攻击），系统不会从武器复制任何标记。这意味着默认情况下，武器上创建的任何加值都不存在于从该武器创建的攻击上。开启此选项将在创建攻击时复制这些标记。这仅在创建时发生，事后不会同步任何一方修改的标记。默认为 false。"
+            }
+        },
+        "applications": {
+            "actor": {
+                "gm-hint": "你可以看到所有友方角色，因为你是 GM。玩家只能选择玩家 Token 和他们拥有观察权限的 Token。有一个模组设置允许他们选择世界中的任何友好 NPC Token（这可能会泄露其他场景中的 Token）。",
+                "no-actors": "未找到角色。",
+                "npcs": "友好 NPC",
+                "observed": "观察的角色",
+                "players": "玩家角色"
+            },
+            "token": {
+                "gm-hint": "你可以看到所有 Token，因为你是 GM。玩家只能选择对他们可见的 Token。",
+                "no-tokens": "此场景中没有 Token",
+                "player-hint": "场景中任何当前选中的 Token 都已预选。你可以启用一个设置来跳过此窗口并自动使用这些目标。悬停在任何选项上将在场景中高亮显示关联的 Token。"
+            }
+        },
+        "inputs": {
+            "icon-input": {
+                "no-selection": "无当前目标"
+            }
+        },
+        "deprecation": {
+            "dice": {
+                "bonus": "直接在物品上配置技能加值已弃用，并将在未来版本中删除。请直接在授予这些加值的源能力上配置变更。",
+                "inspiration": "直接在技能上配置灵感已弃用，并将在未来版本中删除。转为在适当的能力上配置灵感特定技能。",
+                "dice": "修改技能的基础骰子已弃用，并将在未来版本中删除。请参阅文档了解如何配置技能的福运/厄运。如果你有（厄）运未涵盖的需求，请告诉我。"
+            }
+        },
+        "hint": {
+            "select-action-for-flank": "选择用于夹击的动作。这将用于验证它是近战且具有适当的范围。"
+        },
+        "title": {
+            "flank-detector": "夹击检测器"
+        },
+        "info": {
+            "is-flanking": "'{meToken}' 和 '{allyToken}' 正在用 '{action}' 夹击 '{targetToken}'。",
+            "is-not-flanking": "'{meToken}' 未用 '{action}' 夹击 '{targetToken}'。",
+            "is-not-flanking-with-ally": "'{meToken}' 和 '{allyToken}' 未用 '{action}' 夹击 '{targetToken}'。",
+            "token-distance": "'{first}' 和 '{second}' 之间的距离: {distance}"
+        },
+        "warning": {
+            "action-is-not-melee": "'{action}' 不是近战动作。",
+            "invalid-token-disposition": "Token 态度不兼容夹击。",
+            "invalid-token-selection": "选择了无效 Token。",
+            "no-actor": "你必须选择一个 Token 或在脚本调用中使用此宏。",
+            "pack-flanking": "团队夹击需要配置盟友。",
+            "range-misconfigured": "物品 '{itemName}' ({actionUuid}) 上的动作 ({actionName}) 具有无效射程。验证其最大增量和射程是否设置正确。自动假设其在范围内。",
+            "uncanny-dodge-improved": "必须配置在已正确配置关联职业的职业能力上。"
+        }
+    }
+}

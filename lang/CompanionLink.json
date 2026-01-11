@@ -1,0 +1,26 @@
+{
+	"Koboldworks": {
+		"CompanionLink": {
+			"SelectActor": "选择角色",
+			"Title": "伙伴链接",
+			"TitleBar": "{name} 的伙伴链接",
+			"LinkedMaster": "已链接的主人",
+			"LinkedTo": "已链接到",
+			"Setting": "伙伴链接设置",
+			"Configuration": "配置",
+			"ConfigureLink": "配置链接",
+			"Description": "添加数据链接，允许已链接的角色通过 '@_linked' 出现在骰子数据中。",
+			"Instructions": "拖拽有效的角色到此对话框以链接它们。<br/>或者使用下拉菜单（如果不是 GM）。<p>它们可以通过 <code>@_linked</code> 在任何使用骰子数据的地方访问。<br/>例如，你可以使用 <code>@_linked.attributes.hd.total</code> 来引用已链接角色的 HD。",
+			"Unlink": "断开与主人链接",
+			"UnlinkedHint": "此角色未链接到任何人。",
+			"LinkBroken": "与 ID \"{id}\" 的角色链接已断开",
+			"Name": "主人姓名",
+			"Id": "主人 ID",
+			"Familiar": "魔宠",
+			"AsFamiliar": "作为魔宠",
+			"FamiliarHint": "在适用的情况下继承已链接角色的技能和豁免。",
+			"OpenSheet": "打开角色卡",
+			"GMCanOnlyDrop": "仅 GM 可使用拖拽功能。"
+		}
+	}
+}

@@ -1,0 +1,190 @@
+{
+    
+    "SETTINGS": {
+        "damageTypePriority": {
+            "name": "自定义伤害类型优先级",
+            "hint": "添加自定义伤害类型以计入伤害减免（DR）类型..."
+        },
+        "damageTypePriorityMenu": {
+            "name": "配置伤害类型优先级",
+            "label": "配置",
+            "hint": "打开配置表单以设置伤害类型优先级。"
+        },
+        "customSetting": {
+            "name": "自定义伤害类型",
+            "label": "配置自定义伤害类型",
+            "hint": "为模组添加或编辑自定义伤害类型。"
+        },
+        "massiveDamage": {
+            "name": "巨创规则 (Massive Damage)",
+            "hint": "启用可选的巨创规则..."
+        }
+    },
+    "FORM": {
+        "damageTypeForm": {
+            "title": "自定义伤害类型",
+            "clearTitle": "清除所有？",
+            "deleteTitle": "删除 \"{value}\"？",
+            "editTitle": "编辑伤害类型",
+            "labels": {
+                "name": "伤害类型名称",
+                "img": "图片",
+                "category": "类别",
+                "abbr": "缩写",
+                "icon": "图标类名和颜色",
+                "isModifier": "是调整值",
+                "flag": "属性伤害",
+                "categoryPhysical": "物理",
+                "categoryEnergy": "能量",
+                "categoryMisc": "杂项",
+                "flagDamage": "伤害",
+                "flagDrain": "吸取",
+                "flagPenalty": "减值"
+            },
+            "placeholders": {
+                "name": "在此输入新伤害类型名称...",
+                "customCategory": "输入新类别名称...",
+                "abbr": "在此输入缩写...",
+                "icon": "在此输入图标类名..."
+            },
+            "tooltips": {
+                "name": "输入新伤害类型的名称",
+                "img": "为新伤害类型选择图片",
+                "category": "选择类别或输入新类别名称。<br><br>系统默认包含 '物理'、'能量' 和 '杂项' 类别。",
+                "abbr": "输入伤害类型的缩写",
+                "icon": "输入图标类名并为新伤害类型选择颜色",
+                "isModifier": "如果是调整值请勾选",
+                "flag": "选择属性伤害的类型和属性"
+            },
+            "options": {
+                "selectAbility": "选择属性",
+                "abilities": {
+                    "str": "力量",
+                    "dex": "敏捷",
+                    "con": "体质",
+                    "int": "智力",
+                    "wis": "感知",
+                    "cha": "魅力"
+                }
+            },
+            "buttons": {
+                "save": "保存",
+                "clear": "清除所有",
+                "browse": "浏览"
+            },
+            "confirmations": {
+                "clearAll": "确定要清除所有已保存的值吗？",
+                "deleteValue": "确定要删除 \"{value}\" 吗？",
+                "reload": "部分更改的设置仅在重新加载应用后生效。是否立即重新加载？"
+            },
+            "errors": {
+                "nameRequired": "伤害类型名称为必填项。",
+                "imgOrIconRequired": "必须提供图片或图标类名。",
+                "categoryRequired": "类别为必填项。",
+                "invalidImgUrl": "无效的图片 URL。",
+                "invalidIconClass": "无效的图标类名。",
+                "selectAbility": "指定伤害类型时必须选择一个属性。",
+                "flagTypeRequired": "指派属性时必须选择属性伤害类型。"
+            },
+            "savedCustomDamageTypes": "自定义伤害类型"
+        },
+        "damagePriorityForm": {
+            "title": "伤害优先级设置",
+            "description": "添加自定义伤害类型以计入伤害减免（DR）类型...",
+            "labels": {
+                "drType": "伤害减免 (DR) 类型",
+                "enhancement": "增强加值"
+            },
+            "tooltips": {
+                "enhancement": "武器增强加值等效等级"
+            },
+            "buttons": {
+                "addRow": "添加行",
+                "resetDefaults": "重置为默认",
+                "save": "保存"
+            }
+        },
+        "drTypeEditor": {
+            "title": "编辑伤害减免类型",
+            "labels": {
+                "drTypes": "DR 类型"
+            },
+            "options": {
+                "selectType": "选择类型"
+            },
+            "placeholders": {
+                "customType": "输入自定义类型"
+            },
+            "buttons": {
+                "addType": "添加类型",
+                "save": "保存"
+            }
+        },
+        "translationForm": {
+            "title": "翻译配置",
+            "englishName": "英文名称",
+            "translation": "翻译",
+            "description": "将 'Hardness'、'Construct Traits' 和 'Undead Traits' 更改为你所需语言的翻译。"
+        }
+    },
+    "NOTIFICATIONS": {
+        "confirmations": {
+            "clearAll": "确定要清除所有伤害类型吗？",
+            "deleteRow": "确定要删除此行吗？",
+            "deleteTitle": "删除行？",
+            "deleteValue": "确定要删除 \"{value}\" 吗？",
+            "reload": "部分更改的设置仅在重新加载应用后生效。是否立即重新加载？",
+            "reloadRequired": "重新加载应用？",
+            "resetDefaults": "确定要重置为默认值吗？",
+            "resetTitle": "重置为默认？"
+        },
+        "errors": {
+            "nameRequired": "伤害类型名称为必填项。",
+            "imgOrIconRequired": "必须提供图片或图标类名。",
+            "categoryRequired": "类别为必填项。",
+            "invalidImgUrl": "无效的图片 URL。",
+            "invalidIconClass": "无效的图标类名。",
+            "badWeaponTypeFormat": "武器类型格式无效。"
+        }
+    },
+    "BUTTONS": {
+        "yes": "是",
+        "no": "否",
+        "save": "保存",
+        "cancel": "取消",
+        "browse": "浏览"
+    },
+    "PF1.AutomateDamage": {
+        "GlobalSettings": {
+            "Title": "物品伤害设置",
+            "Description": "为此物品配置全局伤害自动化设置。",
+            "HardnessSection": "硬度设置",
+            "BypassSection": "伤害类型穿透设置"
+        },
+        "ActionSettings": {
+            "Title": "动作伤害设置",
+            "Description": "为此特定动作配置伤害自动化设置。",
+            "GlobalActionSettings": "动作设置",
+            "BypassSection": "伤害类型穿透设置",
+            "AttacksSection": "单次攻击设置",
+            "ToggleAttackSettings": "切换单次攻击设置"
+        },
+        "Settings": {
+            "BypassHardness": "无视硬度",
+            "BypassHardnessHint": "造成伤害时完全无视硬度。",
+            "IgnoreHardness": "忽略部分硬度",
+            "IgnoreHardnessHint": "造成伤害时忽略特定数值的硬度。",
+            "BypassImmunity": "穿透免疫",
+            "BypassImmunityHint": "穿透对所选伤害类型的免疫。",
+            "BypassResistance": "穿透抗性",
+            "BypassResistanceHint": "穿透对所选伤害类型的抗性。",
+            "BypassDR": "穿透 DR",
+            "BypassDRHint": "穿透所选伤害类型的伤害减免 (DR)。"
+        },
+        "Buttons": {
+            "GlobalSettings": "全局伤害设置",
+            "ActionSettings": "动作伤害设置"
+        },
+        "Save": "保存更改"
+    }
+}

@@ -1,0 +1,477 @@
+{
+	"LittleHelper": {
+		"CasterProgressionTitle": "{actor} - {book} - 施法者进程",
+		"Count": "数量",
+		"Known": "已知",
+		"PageCount": "页数",
+		"Untargeted": {
+			"Title": "应用伤害/治疗到未选中的 Token",
+			"Notice": "正在应用到**未选中**的 Token。",
+			"Missing": "[缺失]",
+			"Invalid": "未选中",
+			"Valid": "包含了实际目标",
+			"Excluded": "排除了实际目标",
+			"Confirm": "这是否正确？"
+		},
+		"Formula": {
+			"Base": "基础公式",
+			"Resolved": "变量已解析",
+			"Variables": "变量"
+		},
+		"XPTable": {
+			"Title": "经验值进程表",
+			"Short": "经验表",
+			"Cumulative": "累计",
+			"CumulativeHint": "所有等级的累计经验值需求。",
+			"Increment": "每级",
+			"IncrementHint": "每一级的经验值需求。",
+			"Percent": "±%",
+			"PercentHint": "每级经验值需求的增长百分比。"
+		},
+		"Macro": {
+			"Author": "作者",
+			"None": "无权访问",
+			"Visible": "可见",
+			"Executable": "可执行",
+			"Editable": "可编辑"
+		},
+		"Linked": "已链接",
+		"Unlinked": "未链接",
+		"Sidebar": {
+			"ActorType": "类型: {type}"
+		},
+		"Action": {
+			"Actions": "动作",
+			"Migrate": "迁移",
+			"ExportJSON": "导出 JSON",
+			"Configure": "配置",
+			"Resync": "重新同步",
+			"Migration": {
+				"Status": {
+					"InProgress": "正在迁移...",
+					"Unlocking": "正在解锁...",
+					"Locking": "正在锁定...",
+					"Error": "错误！",
+					"Finished": "完成"
+				}
+			}
+		},
+		"Checks": {
+			"BaseDC": "基础 DC {dc}",
+			"BaseDCFlavor": "基础 DC",
+			"Skills": {},
+			"Other": {
+				"concentration": {
+					"DefensiveMaxSL": "防御式施法最高法术等级 {level}",
+					"DamagedDC": "受伤害 DC 10+法术等级+伤害",
+					"GrappledDC": "被擒抱 DC 10+法术等级+CMB",
+					"EntangledMaxSL": "被纠缠最高法术等级 {level}",
+					"EntangledMaxSLHint": "DC 15+法术等级"
+				}
+			}
+		},
+		"Theory": {
+			"EstimateAbbr": "估算",
+			"CLOffset": "CL 偏移",
+			"Metatype": "元类型",
+			"MinMax": "最小-最大",
+			"Types": "类型",
+			"NoDamage": "无伤害"
+		},
+		"Info": {
+			"SpellsShowPrepared": "显示所有法术。<br>点击仅显示已准备",
+			"SpellsShowAll": "仅显示已准备。<br>点击显示所有法术",
+			"RetrainPotential": "重训潜力: {missing} / {max}",
+			"RetrainHint": "当前每 +1 生命值需 3 天 & {cost}。",
+			"Thacoh": "大致需要的最低命中骰。",
+			"Comparison": "对比",
+			"AC": "{ac} AC",
+			"MDex": "{mdex} 最大敏捷",
+			"MDexAC": "{mdex} 最大敏捷 [{ac} AC]",
+			"ACP": "{acp} 防具检定减值",
+			"ASF": "{asf}% 奥术失败率",
+			"ComparedAgainst": "vs {name}",
+			"Value": "价值: {gp} gp",
+			"Currency": "{gp} gp",
+			"HP": "HP: {current} / {max}",
+			"Hardness": "硬度: {hardness}",
+			"ItemCount": "{count} 个物品",
+			"Subcontainers": "子容器",
+			"Critical": "{range}/×{mult} 重击"
+		},
+		"Keybindings": {
+			"ExtraInfo": {
+				"Hold": "按住以显示额外信息"
+			}
+		},
+		"Options": {
+			"RollModeOverride": "投骰模式覆盖",
+			"NoOverride": "无覆盖",
+			"ForceDisplay": "强制显示",
+			"ForceSkip": "强制跳过"
+		},
+		"Settings": {
+			"Category": {
+				"common": "通用",
+				"items": "物品",
+				"hud": "HUD (界面)",
+				"dev": "开发",
+				"module": "模组集成",
+				"system": "PF1 核心",
+				"dialog": "对话框",
+				"foundry-ui": "Foundry 界面",
+				"macro": "宏",
+				"token": "Token",
+				"token-hud": "Token HUD",
+				"compendium-browser": "图鉴浏览器",
+				"actor-sheet": "角色卡",
+				"item-sheet": "物品卡",
+				"chat-card": "聊天卡片",
+				"experiment": "实验性功能"
+			},
+			"World": "{module} – 世界设置",
+			"Client": "{module} – 客户端设置",
+
+			"ActorOverrides": "禁用特性",
+			"ActorOverridesButton": "Little Helper <span class='lil-thing'>🦎</span> 覆盖设置",
+			"ActorOverridesTitle": "Little Helper 覆盖",
+
+			"IgnoreActorTypes": "忽略角色类型",
+			"IgnoreActorTypesHint": "不对这些类型进行全面处理，忽略其问题和建议。"
+		},
+		"UI": {
+			"IDButton": "ID",
+			"DataButton": "数据",
+			"OpenItemSheet": "打开物品卡",
+			"OpenActorSheet": "打开角色卡",
+			"OpenActionSheet": "打开动作卡",
+			"PopTabHint": "右键点击可在单独窗口弹出标签页。",
+			"ClickToEndEffect": "左键点击结束效果",
+			"ClickToEndEffectAlt": "右键点击结束效果"
+		},
+		"QuickSkills": {
+			"Title": "快速技能",
+			"DefaultTitle": "默认快速技能",
+			"ActorTitle": "{name} [{id}] 的快速技能",
+			"AutoSelection": "自动选择",
+			"MinRank": "最低等级",
+			"Percentage": "百分比",
+			"AutoSelectHint": "将值设为 0 以禁用该标准。如果两者都启用，则必须同时满足两个标准。",
+			"UseMaxMod": "使用最大调整值 ({maxMod}) 而非最大等级 ({maxRank}) 计算百分比。",
+			"OnlyAutoSelected": "仅显示自动选择的技能",
+			"Mod": "调整",
+			"Default": "默认",
+			"Sources": "来源",
+			"NoneMatched": "无匹配技能。",
+			"HelpText": "– 星号表示未配置时默认启用的技能。<br>– 自动选择是根据技能等级或调整值达到某种阈值来显示技能，而不是明确选择。<br>– 加粗表示由自动选择阈值选中的技能。",
+			"Reset": {
+				"Title": "硬重置技能配置？",
+				"Info": "你希望完全重置配置吗？<br>这将完全移除配置且无法撤销。",
+				"Soft": "技能已重置。配置尚未保存。"
+			}
+		},
+		"Warnings": "警告",
+		"Errors": "错误",
+		"Warning": {
+			"RefreshNeeded": "Little Helper 🦎 设置更改需要刷新才能完全生效。",
+			"SkillMismatch": "使用的技能与允许的不匹配！",
+			"FeatMismatch": "使用的专长与允许的不匹配！",
+			"MismatchedQuantity": "数量不匹配: {details}",
+			"UnusedSlots": "未使用的插槽",
+			"NoArmor": "没有护甲？",
+			"NoEquipment": "没有装备？",
+			"BadVariable": "格式错误的 @-变量",
+			"MissingRounding": "缺失取整。",
+			"NoItemsFound": "未找到物品。",
+			"EmptyFormula": "空公式",
+			"RunInOperator": "包含可能导致计算失败的连字符 [- + / *]。",
+			"DieFunctionPair": "确保 fn(...)dX 写为 (fn(...))dX。",
+			"ExcessSpacing": "包含函数参数或风味文本的括号间有多余空格。",
+			"FreeLetters": "字符串既不是变量也不是函数",
+			"OrphanBrackets": "孤立的方括号。",
+			"TooManySlotItems": "同一插槽类型的物品使用过多。<br>你使用了 {used} 个，上限 {limit} 个。",
+			"TooFewLanguages": "语言过少。<br>应该至少知道 {granted} 种。<br>缺少 {missing} 种。",
+			"NoArmorProf": "无护甲擅长。",
+			"NoWeaponProf": "无武器擅长",
+			"NoShieldWithTwohanded": "双手武器通常不能与轻型盾牌或更重的盾牌同时使用。",
+			"SyncNoSource": "没有可同步的源 ID。",
+			"GM": {
+				"SceneScaleMismatch": "场景比例设为 \"{scale} {units}\" 且与所选系统单位不匹配。"
+			}
+		},
+		"Clarify": {
+			"NoActionNeeded": "无需操作。"
+		},
+		"Foundry": {
+			"Light": {
+				"Bright": {
+					"Hint": "此 Token 发出的明亮光照对所有人可见。"
+				},
+				"Dim": {
+					"Hint": "此 Token 发出的昏暗光照对所有人可见。"
+				}
+			}
+		},
+		"Details": {
+			"BenchPressing": {
+				"Disclaimer": "期望值是基于卧推表的平均水平。<br>如果你不知道这些数字的意义，请忽略它们。"
+			},
+			"Token": {
+				"Disposition": "态度",
+				"Linked": "链接",
+				"Sighted": "有视觉",
+				"Blind": "盲目"
+			}
+		},
+		"Scene": {
+			"NoVisionOnToken": "{name} 在此场景缺少视觉。",
+			"LackingVision": "一个或多个 Token [{count}] 缺少视觉。",
+			"LackingVisionGM": "场景 Token 视觉已启用，但一个或多个玩家 Token [{count}] 没有视觉。"
+		},
+		"Conditions": {
+			"_invalid": "⚠️ 无效状态 ID ⚠️",
+			"_missing": "无描述。",
+			"bleed": "不停地流血。\n无其他效果。\n\n可能停止于：\n- DC 10 伤势稳定检定\n- DC 15 医疗检定",
+			"blind": "基于力量和敏捷的技能检定以及基于视觉的察觉检定 -4 减值。\n\nDC 10 特技动作检定以快于半速移动，否则面临倒地风险。\n\n所有对手实际上视为隐形。",
+			"burrow": "如果完全没入地下，则无法被任何无法穿透固体物体的目标选中。\n\n如果没有颤动感知或类似穿透固体的感官，实际上视为目盲。",
+			"burning": "你着火了！\n\n在你的回合开始时投掷 DC 15 反射豁免以停止燃烧；失败则受到 1d6 伤害。\n\n在地上打滚或扑灭火焰可获得第二次豁免机会（+4 加值）以结束燃烧。",
+			"confused": "d% 决定行为：\n* 01 – 25 : 正常行动。\n* 25 – 50 : 什么都不做。\n* 51 – 75 : 对自己造成 1d8+力量伤害。\n* 76 – 100 : 攻击最近的生物。",
+			"cowering": "无法行动\n\nAC -2 减值\n失去 AC 的敏捷加值",
+			"dazed": "无法行动\n\n无减值。",
+			"dazzled": "攻击和基于视觉的察觉检定 -1 减值。",
+			"deaf": "先攻检定 -4 减值。\n自动在基于听觉的察觉检定中失败。\n察觉检定 -4 减值。\n\n20% 几率施放包含语言成分的法术失败。",
+			"entangled": "攻击检定 -2 减值\n敏捷 -4 减值\n\n施放包含姿势成分的法术必须专注。\n\n如果被锚定则无法移动。",
+			"exhausted": "力量和敏捷 -6 减值\n\n半速移动。\n无法奔跑或冲锋。",
+			"fatigued": "力量和敏捷 -2 减值\n\n无法奔跑或冲锋。",
+			"frightened": "攻击、豁免、技能检定和属性检定 -2 减值。\n\n必须逃跑，必要时使用能力。\n\n恶化为惊恐，减轻为战栗。",
+			"fly": "免疫压力板和颤动感知。\n\n可能需要飞行检定以避免坠落。\n\n受大风天气严重影响。",
+			"grappled": "敏捷 -4 减值\n攻击检定和 CMB -2 减值，除了尝试擒抱或挣脱。\n\n无法采取需要双手的动作。\n包含姿势成分的法术需要专注检定。",
+			"helpless": "敏捷设为 0\n\n麻痹、睡眠、被束缚、被压制、昏迷或完全受制于对手。",
+			"hover": "免疫压力板和颤动感知。\n\n这不是飞行的悬停动作。",
+			"incorporeal": "免疫非魔法攻击。\n\n只受到 50% 伤害。\n受到虚体生物和力场效果的全额伤害。",
+			"invisible": "对有视觉的敌人攻击检定 +2 加值。\n目标失去 AC 的敏捷加值。\n\n对有视觉的敌人全隐蔽（50% 失手率）。",
+			"nauseated": "每回合只能采取一个移动动作，除此之外不能做任何事。\n\n无法攻击、施法、专注或做任何其他需要注意力的事情。",
+			"panicked": "豁免、技能检定和属性检定 -2 减值。\n\n无法攻击。\n必须丢弃所有手持物品。\n必须逃跑，必要时使用能力。\n如果无法逃跑可以采取全防御。\n\n减轻为惊惧。",
+			"paralyzed": "力量和敏捷设为 0。\n\n无法行动，但可以进行纯精神任务。",
+			"pinned": "失去 AC 的敏捷加值\nAC -4 减值。",
+			"prone": "对远程攻击 AC +4 加值。\n对近战攻击 AC -4 减值。\n近战攻击 -4 减值。\n\n除了弩以外无法使用远程武器攻击。",
+			"shaken": "攻击、豁免、技能检定和属性检定 -2 减值。\n\n恶化为惊惧。",
+			"sickened": "攻击、武器伤害、豁免、技能检定和属性检定 -2 减值。",
+			"staggered": "只能采取标准动作。\n\n提醒：5尺快步是非动作。\n也可以采取自由、迅捷和直觉动作。",
+			"stunned": "AC -2 减值。\n失去 AC 的敏捷加值。\n\n无法采取任何行动。\n\n丢弃任何手持物品。",
+			"sleep": "无助且无意识。\n实际上目盲。\n\n察觉检定 DC +10。",
+			"squeezing": "AC -4 减值\n攻击 -4 减值\n移动速度减半\n\n如果挤入比你占据空间宽度的一半还窄的空间：\n- 失去 AC 的敏捷加值\n- 无法攻击\n- 需要逃脱检定来移动",
+			"swim": "如果没有游泳速度，移动需要游泳检定。",
+			"disabled": "濒临意识边缘。\n\n包含恍惚状态。",
+			"dying": "正在失血！\n\nDC 10 医疗检定以稳定伤势。\n体质检定 (DC 10 - HP) 以自我稳定。",
+			"flatFooted": "尚未在战斗中行动。\n\n失去 AC 的敏捷加值。",
+			"petrified": "无助且昏迷。\n\n失去 AC 的敏捷加值。",
+			"stable": "昏迷但活着。\n\n每小时可尝试 DC 10 体质检定以恢复意识并转为瘫痪状态。\n\n如果你没有得到救助，必须每小时稳定一次以免失去 1 hp。",
+			"unconscious": "无助、倒地且目盲。",
+			"dead": "他死了，约翰！他死了！"
+		},
+		"DataSources": {
+			"BABIteratives": "BAB 迭代攻击",
+			"FlurryUnchained": "连打 (Unchained)",
+			"FlurryChained": "连打 (Chained)",
+			"Fortune": "福运",
+			"DefaultCheck": "默认检定",
+			"AutoCrit": "自动重击",
+			"Misfortune": "厄运",
+			"WeaponFocus": "武器专攻",
+			"WeaponFocusGt": "高等武器专攻",
+			"CriticalFocus": "重击专攻",
+			"Situational": "情境加值",
+			"Charge": "冲锋",
+			"Flanking": "夹击",
+			"Iterative2nd": "第二次迭代攻击",
+			"Iterative3rd": "第三次迭代攻击",
+			"ShotIntoMelee": "射入近战",
+			"ShotThrough": "穿过生物射击",
+			"ShotThroughIntoMelee": "穿过生物射入近战",
+			"RacialDCTemplate": "种族 DC 模板",
+			"ClassDCTemplate": "职业 DC 模板",
+			"SpellFocus": "法术专攻",
+			"SpellFocusGt": "高等法术专攻",
+			"AidAnother": "援助他人",
+			"AidAnotherX2": "援助他人 ×2",
+			"AidAnotherX3": "援助他人 ×3",
+			"SizeScalingDamage": "随体型缩放 1d6",
+			"SneakAttack": "偷袭",
+			"ThreeQuartersOffset": "3/4 等级+1: 动物伙伴",
+			"ThreeQuarters": "3/4 等级+0: 幻灵/魅影"
+		},
+		"HealthLevel": {
+			"Healthy": "健康",
+			"Grazed": "擦伤",
+			"Wounded": "受伤",
+			"Critical": "重伤",
+			"Dying": "濒死",
+			"Dead": "死亡"
+		},
+		"LinkState": {
+			"Linked": {
+				"Label": "已链接",
+				"TitleTag": "[已链接]",
+				"Token": "已链接 Token",
+				"Prototype": "已链接原型 Token",
+				"PrototypeShort": "已链接原型"
+			},
+			"Unlinked": {
+				"Label": "未链接",
+				"TitleTag": "[未链接]",
+				"Token": "未链接 Token",
+				"Prototype": "未链接原型 Token",
+				"PrototypeShort": "未链接原型"
+			},
+			"UnexpectedForPC": "PC 异常",
+			"UnexpectedForNPC": "NPC 异常"
+		},
+		"Scribing": "抄写",
+		"Aura": "{strength} {school}",
+		"Feature": {
+			"apply-damage-sanity": {
+				"Label": "应用伤害合理性检查",
+				"Hint": "通过检查你选中的 token 是否在目标列表中，对应用伤害进行轻微的合理性检查。如果发现差异，将显示确认对话框。"
+			},
+			"skill-acp": {
+				"Label": "技能 ACP 显示",
+				"Hint": "在角色技能标签页上给出更清晰的警告，提示技能受到 ACP 影响。"
+			},
+			"natural-reach-display": {
+				"Label": "显示天生触及",
+				"Hint": "在属性标签页显示天生触及和体态。"
+			},
+			"new-actor-guide": {
+				"Label": "新角色指南",
+				"Hint": "为尚未配置角色的内容显示简单提示。"
+			},
+			"missing-bits": {
+				"Label": "缺失部分",
+				"Hint": "添加关于缺失部分的警告，如语言过少、无擅长、缺少 FCB、未使用法术、缺少背景、技能点不匹配和专长不匹配。"
+			},
+			"duplicate-slots": {
+				"Label": "插槽问题 (重复 & 未使用)",
+				"Hint": "警告物品插槽问题，并在插槽物品类别底部显示未使用插槽列表。仅支持默认人形生物配置。"
+			},
+			"excess-skill-ranks": {
+				"Label": "技能等级过高",
+				"Hint": "当技能等级超过其可能的最大值时显示警告。"
+			},
+			"creature-type-info": {
+				"Label": "人形生物？",
+				"Hint": "如果角色是人形生物，在四足生物开关附近显示简单说明。"
+			},
+			"actor-sheet-condition-durations": {
+				"Label": "状态持续时间",
+				"Hint": "在 Buff 标签页显示状态持续时间，并随世界时间更新。"
+			},
+			"buff-tooltips": {
+				"Label": "Buff 提示",
+				"Hint": "Buff 的工具提示，显示更详细的持续时间信息。需要 Buff 处于激活状态。"
+			},
+			"currency-weight-display": {
+				"Label": "货币重量",
+				"Hint": "显示货币重量。"
+			},
+			"actor-token-name": {
+				"Label": "Token 名称",
+				"Hint": "如果 Token 名称与角色名称不同，在角色名称附近显示 Token 名称。"
+			},
+			"actor-token-mismatch": {
+				"Label": "Token 图像不匹配",
+				"Hint": "当头像与 Token 图像不匹配时显示小标记。"
+			},
+			"enhanced-language-selection": {
+				"Label": "增强语言选择器",
+				"Hint": "通过突出显示通用语言并给所有内容添加图标分类，使语言选择器更清晰。"
+			},
+			"quick-roller": {
+				"Label": "快速投骰",
+				"Hint": "在检定聊天消息上显示投骰按钮，以快速投掷相同的检定。"
+			},
+			"card-hints": {
+				"Label": "检定提示标签",
+				"Hint": "为各种检定显示额外提示，例如常见 DC。"
+			},
+			"xp-chart": {
+				"Label": "经验表",
+				"Hint": "经验配置对话框的经验进程表。"
+			}
+		},
+		"CardHints": {
+			"StabilizeDC": "稳定 DC",
+			"DoorDC": "门 DC 0–30",
+			"DoorDCHint": "门的 DC 从小于零到 30 左右不等。祝好运。",
+			"ContinuousDamageHint": "持续伤害只算一半。",
+			"IdentifyMaxLevel": "辨识最高等级: {level}",
+			"IdentifyMaxLevelHint": "+ 察觉 DC 修正。",
+			"IndifferentBaseDC": "冷漠基础 DC {dc}",
+			"DemoralizeDC": "挫败士气 DC: 10+HD+感知",
+			"DemoralizeSizeBonus": "±4/体型",
+			"DemoralizeSizeBonusHint": "每级体型差异 ±4。",
+			"FlySlowDC": "半速 DC {dc}",
+			"FlyHoverDC": "悬停 DC {dc}",
+			"FlyOtherDC": "其他 DC {dc}",
+			"TumbleDC": "翻滚 DC=CMD+5",
+			"TumbleDCHint": "穿过被占据空间为 CMD+5。",
+			"JumpHeight": "高度: {value}",
+			"JumpLength": "长度: {value}",
+			"FeintDC": "佯攻基础 DC {dc}",
+			"FeintDCHint": "DC 10 + (BAB + 感知) 或 (察言观色)，取其高者。",
+			"ClimbNaturalRockDC": "天然岩石 DC {dc}",
+			"DisableDeviceBaseDC": "装置 DC {dc} 或更高",
+			"DisableLockBaseDC": "锁 DC {dc} 或更高",
+			"PalmDC": "藏匿 DC {dc}",
+			"StealDC": "盗取 DC {dc}",
+			"EscapeArtistBaseDC": "逃脱 DC {dc} 或更高",
+			"HandleAnimalBaseDC": "基础 DC {dc} 或更高",
+			"HealCommonDC": "稳定/长期护理 DC {dc}",
+			"HealDeadlyDC": "致命伤 DC {dc}",
+			"HealDeadlyDCHint": "每缺失一次医疗包次数 +2 DC",
+			"RideFastMountDC": "快速上下坐骑 DC {dc}",
+			"SubsistDC": "生存 DC {dc}",
+			"SubsistDCHint": "每超过 2 点多喂养 1 人",
+			"SubsistFed": "喂养 {count} 人",
+			"UMDWandDC": "魔杖 DC {dc}",
+			"UMDScrollMaxLevel": "卷轴最高等级: {level}",
+			"UMDScrollMaxLevelHint": "忽略对模拟属性值的需求。<br>基础 DC = 20 + 法术等级",
+			"UntrainedKnowledgeMaxDC": "未受训 DC {dc}",
+			"CommonKnowledgeHint": "任何常识知识 DC 为 5 到 10。",
+			"KnowledgeBaseDC": "普通基础 DC {dc}",
+			"KnowledgeBaseDCHint": "基础 DC 通常在 15 到 30 之间，加上事物的 CR 或等级。",
+			"OpposedBy": "对抗技能: {skill}",
+			"SwimSpeed": "移动: {speed}",
+			"SwimSpeedHint": "移动动作四分之一速度。整轮动作半速。",
+			"ClimbSpeed": "移动: {speed}",
+			"ClimbSpeedHint": "移动动作四分之一速度。整轮动作半速。",
+			"FastClimb": "加速: {speed}",
+			"FastClimbHint": "通过在投骰前接受 -5 减值，你可以半速移动而不是四分之一速度。",
+			"NaturalSpeed": "天生速度"
+		},
+		"Languages": {
+			"secret": "秘密语言",
+			"core": "核心语言",
+			"racial": "种族语言",
+			"monster": "怪物/NPC 语言",
+			"regional": "地区语言",
+			"proto": "原始语言",
+			"magic": "魔法语言",
+			"fae": "精类语言",
+			"elemental": "元素语言",
+			"planar": "位面语言",
+			"dead": "死语",
+			"common": "通用语",
+			"unknown": "未知"
+		}
+	},
+	"Koboldworks": {
+		"Missing": {
+			"PF1": {
+				"Distance": "{distance} {unit}",
+				"Qualities": "特性",
+				"DurationLeft": "剩余 {time} {unit}"
+			}
+		}
+	}
+}

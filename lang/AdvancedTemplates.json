@@ -1,0 +1,115 @@
+{
+    "ckl-advanced-templates-pf1": {
+        "advanced-templates": "进阶模板 (Advanced Templates)",
+        "cone": "锥状",
+        "line": "线状",
+        "rotation": "旋转",
+        "hints": {
+            "chooseStart": "左键点击选择起始点。",
+            "mouseWheelRotate": "左键点击提交。使用鼠标滚轮旋转。",
+            "restart": "左键点击提交。右键点击重新选择起始点。",
+            "restart-no-target": "左键点击提交。右键点击重新选择起始点。在无网格场景中为线状模板选取 Token 目标的开销很大，因此在直线确定前不会显示目标。"
+        },
+        "settings": {
+            "cone15Alternate": {
+                "name": "允许 15尺锥状起于网格交叉点",
+                "hint": "启用后，玩家在放置 15尺锥状范围时，可以选择以网格交叉点为起点进行上下左右调整，而不仅限于标准的 15尺锥状网格轮廓（即规则描述中允许但不显示在标准 15尺图示中的情况）。"
+            },
+            "coneAlternate": {
+                "name": "允许锥状起于网格边中点",
+                "hint": "启用后，允许玩家从网格边的中点（如规则图中 15尺锥状所示）放置锥状范围，而不仅限于网格交叉点。"
+            },
+            "coneRotation": {
+                "name": "允许非标准锥状旋转",
+                "hint": "设置此数值以允许玩家用鼠标滚轮旋转锥状范围。该数值决定每次滚轮转动的增量角度。0 意味着锥状将始终“背对施法者”。为获得最佳效果，建议设为 45 或更低，且应为 45 的约数（如 45, 22.5, 9, 5 等）。这会导致一些非常奇怪的“锥状”形状，但在放置时会给你更多自由度。"
+            },
+            "debug": {
+                "name": "启用调试日志",
+                "hint": "启用后，各种日志信息将输出到控制台以帮助调试。仅在功能异常时有用。"
+            },
+            "defaultLineWidth": {
+                "name": "默认线状宽度",
+                "hint": "线状模板的默认宽度。这主要是为了美观，但如果你使用 Automated Animations 模组，建议保留为 5，以免线状动画在狭窄的模板中被挤压。"
+            },
+            "disableHints": {
+                "name": "禁用模板放置提示",
+                "hint": "禁用后，将不再显示关于旋转、重选起点和最终放置的文字提示。"
+            },
+            "reExpand": {
+                "name": "重新展开已折叠的面板",
+                "hint": "启用后，任何为了放置模板而自动折叠的角色卡将在模板放置完成后重新展开。"
+            },
+            "target": {
+                "name": "选中模板内的 Token",
+                "hint": "启用后，当你放置模板时，会自动选中范围内的 Token。"
+            }
+        },
+        "templates": {
+            "circle": {
+                "placement": {
+                    "grid.label": "网格交叉点",
+                    "self.label": "以施法者为中心",
+                    "splash.label": "溅射武器 (Splash)",
+                    "type": {
+                        "label": "效果类型",
+                        "burst": "爆发 (Burst)",
+                        "spread": "扩散 (Spread)",
+                        "emanation": "弥漫 (Emanation)"
+                    },
+                    "attachToToken": "附着于施法者"
+                }
+            },
+            "cone": {
+                "placement": {
+                    "self.label": "源自施法者",
+                    "selectTargetSquare.label": "源自选定方格"
+                }
+            },
+            "line": {
+                "default": "默认宽度",
+                "overrideWidth": "自定义宽度",
+                "uses same labels as cone": "",
+                "widthLabel": "宽度设置",
+                "widthOverride": "宽度数值"
+            },
+            "rect": {
+                "placement": {
+                    "centered.label": "以光标为中心"
+                },
+                "height": {
+                    "name": "高度公式 (尺)",
+                    "hint": "{value} (同宽度)"
+                },
+                "width": {
+                    "name": "宽度公式 (尺)",
+                    "hint": "0"
+                }
+            },
+            "deletion": {
+                "label": "何时删除",
+                "doNotDelete": "不自动删除",
+                "endOfTurn": "回合结束时",
+                "timespan": "持续时间结束"
+            },
+            "chooseOptions": "选择选项",
+            "colorGroupLabel": "填充设置",
+            "colorAlpha.label": "填充透明度",
+            "hideOutline.label": "隐藏轮廓",
+            "ignoreRange": "忽略距离限制",
+            "modalTitle": "{itemName} 模板",
+            "placement.selection.label": "定位方式",
+            "placement.useSystem.label": "使用系统默认",
+            "textureGroupLabel": "纹理设置",
+            "textureAlpha.label": "纹理透明度",
+            "textureScale.label": "纹理缩放"
+        },
+        "cancel": "取消",
+        "coneStart": "锥状起点",
+        "lineStart": "线状起点",
+        "ok": "确定",
+        "range": "{range} {unit}",
+        "errors": {
+            "outOfRange": "目标超出范围。"
+        }
+    }
+}

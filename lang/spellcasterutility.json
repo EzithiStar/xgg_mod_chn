@@ -1,0 +1,21 @@
+{
+  "scu.prepareTitle": "准备法术",
+  "scu.prepareDescription": "使用动作来准备法术。",
+  "scu.prepareDescriptionAlt": "或者，你可以右键点击法术名称。",
+  "scu.preparedAdd": "准备此法术",
+  "scu.preparedSub": "从已准备列表中移除",
+  "scu.clearPreparation": "清空准备",
+  "scu.applyChanges": "应用更改",
+  "scu.actions": "动作",
+
+  "scu.castTitle": "施放法术",
+  "scu.castDescription": "使用动作来施放法术。",  
+  
+  "scu.errorNoActor": "你没有拥有任何角色。请联系你的 GM。",
+  "scu.errorMultipleActors": "你拥有不止一个角色。请在场景中选择一个角色。",
+  "scu.errorInvalidActor": "'{actor}' 不是玩家角色 (PC)。请选择一个有效的角色！",
+  "scu.errorNoSpell": "{actor} 在 {spellbook} 法术书中没有任何法术。请先在角色卡上添加法术。",
+  "scu.errorNoSpellToCast": "{actor} 没有剩余可施放的法术，或者没有施法能力。",
+  
+  "" : ""
+}

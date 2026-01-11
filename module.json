@@ -1,0 +1,89 @@
+{
+	"id":"xgg_mod_chn",
+	"title":"Translation: 自用中文 [Mod]",
+	"description":"本模组为 FVTT 的部分mod提供了汉化，目前的翻译PF1自用mod。",
+	"authors":[
+		{
+			"name":"xgg",
+			"email":"ezithstar@gmail.com"
+		}
+	],
+	"compatibility":{
+		"minimum":"13",
+		"verified":"13"
+	},
+	"esmodules": [],
+    "scripts": [],
+	"languages":[
+		{
+			"lang":"cn",
+			"name":"中文-PF1AutomateDamage",
+			"path":"lang/AutomateDamage.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-PF1RollBonuses",
+			"path":"lang/RollBonuses.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-CKLAdvancedTemplates",
+			"path":"lang/AdvancedTemplates.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-AuraShare",
+			"path":"lang/AuraShare.json"
+		},
+        {
+			"lang":"cn",
+			"name":"中文-HealthOverTime",
+			"path":"lang/HealthOverTime.json"
+		},
+        {
+			"lang":"cn",
+			"name":"中文-LittleHelper",
+			"path":"lang/LittleHelper.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-CompanionLink",
+			"path":"lang/CompanionLink.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-ItemHints",
+			"path":"lang/ItemHints.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-ImprovedConditions",
+			"path":"lang/ImprovedConditions.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-SpellBookGenerator",
+			"path":"lang/SpellBookGenerator.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-spellcasterutility",
+			"path":"lang/spellcasterutility.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-loot-sheet",
+			"path":"lang/loot-sheet.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-pf1-system",
+			"path":"lang/pf1-system.json"
+		}
+	],
+	"changelog":"",
+	"version":"13.21",
+	"url":"",
+	"manifest": "",
+	"download": ""
+}

@@ -1,0 +1,180 @@
+{
+	"Koboldworks": {
+		"ItemHint": {
+			"Label": "物品提示",
+			"Description": {
+				"ScriptCall": "脚本",
+				"ScriptCallHint": "脚本调用",
+				"Slotless": "免费",
+				"SlotlessHint": "无插槽消耗。",
+				"SpellpointlessHint": "无法力值消耗。",
+				"SlotCost": "{cost} 插槽",
+				"SpellpointCost": "{cost} 法力值",
+				"SpellpointCostShort": "{cost} 点"
+			},
+			"AuraLabel": "显示灵光学派和强度",
+			"AuraHint": "如果禁用，已鉴定的魔法物品将不显示灵光信息。",
+			"IconizeLabel": "图标化提示",
+			"IconizeHint": "在可能的情况下使用图标代替文字提示。",
+			"IconizeSchoolLabel": "灵光学派图标化方式",
+			"IconizeSchoolHint": "Keys 使用 3 字母组合。瑟西隆符文缺失预言系和通用系，因此使用真理和勤勉符文代替。",
+			"Combo": {
+				"Label": "组合提示",
+				"Hint": "如果可用，同时显示图标和文字。",
+				"Always": "总是",
+				"Explicit": "明确 (按内部定义)",
+				"Never": "从不"
+			},
+			"Glow": {
+				"Label": "魔法发光",
+				"Hint": "如果启用，已鉴定的魔法物品名称将根据其灵光强度发光。"
+			},
+			"ValueLabel": "显示价值",
+			"ValueHint": "为不同类型的物品显示价值。",
+			"Value": {
+				"TradeGoodsOnly": "仅贸易品",
+				"TradeGoodsAndContainers": "贸易品 & 容器",
+				"Expanded": "贸易品、容器及容器内容物",
+				"All": "所有物品",
+				"None": "无"
+			},
+			"Icons": {
+				"Letters": "字母缩写",
+				"LettersWithCL": "字母缩写带 CL",
+				"Runes": "瑟西隆符文",
+				"Custom": "游戏图标"
+			},
+			"SanityLabel": "警告异常数值",
+			"SanityHint": "在提示中添加关于奇怪数值的警告。",
+			"ChangeLabel": "显示变更 (Change) 目标",
+			"ChangeHint": "这些仅作为参考指南，并不完全可靠或准确。",
+			"LangLabel": "包含非标准标签",
+			"LangHint": "包含模组引入的、基础系统中不存在的较短标签。仅在使用非英语语言时有效。",
+			"MaxLabelLength": "最大标签长度",
+			"MaxLabelLengthHint": "如果变更/备注提示的标签超过此长度，将被替换为简单的“多项”标签。",
+			"CompatLabel": "兼容模式",
+			"CompatHint": "启用兼容模式，忽略某些已知会导致非标准角色卡出现问题的错误。",
+			"HomebrewLabel": "家酿支持",
+			"HomebrewHint": "切换一些家酿支持功能。目前这只是禁用了物品施法者等级检查。",
+			"Custom": "自定义",
+			"CustomPlaceholder": "无自定义提示。请阅读上方说明。",
+			"ExampleOutput": "示例输出",
+			"Instructions": "自定义物品提示可用于显示物品的变动信息。分号 (;) 可用于分隔多个提示。竖线 (|) 可用于分隔文本与悬停 (工具提示) 文本以及附加指令 (格式: 标签|提示|指令)。骰子数据可用于行内投骰。"
+		},
+		"Hints": {
+			"Many": "多项",
+			"Enhancement": "+{enh} 增强",
+			"ValueMult": "{value} × {quantity} = {total}",
+			"ContentsValue": "{value} (内容物: {contents})",
+			"Contents": "{quantity} 个物品",
+			"ContentsIndefinite": "{quantity}+ 个物品",
+			"Contextual": "情境"
+		},
+		"Generic": {
+			"Unknown": "未知",
+			"NoAction": "无动作",
+			"NoAmmoType": "无弹药类型",
+			"Secondary": "次要",
+			"Nonlethal": "非致命",
+			"UnknownSource": "未知来源",
+			"BadSource": "损坏"
+		},
+		"Sanity": {
+			"FCBInequal": "FCB 不等于等级 (差值 {diff})。",
+			"InsufficientCL": "施法者等级不足 (差值 {diff})。",
+			"Change": {
+				"TargetlessLabel": "无目标",
+				"TargetlessHint": "包含一个不完整的、无目标的变更 (Change) 或情境备注。",
+				"MissingSkillLabel": "错误技能",
+				"MissingSkillHint": "未找到自定义技能: {skillId}",
+				"BadTargetLabel": "错误目标",
+				"BadTargetHint": "包含目标格式错误的变更或情境备注: {target}",
+				"FormulalessLabel": "无公式",
+				"FormulalessHint": "包含一个不完整的、无公式的变更。",
+				"TextlessLabel": "无文本",
+				"TextlessHint": "包含一个不完整的、无文本的情境备注: {target}。"
+			}
+		},
+		"Short": {
+			"AC": "AC",
+			"CMD": "CMD",
+			"Attack": "攻击",
+			"Damage": "伤害",
+			"Skill": "技能",
+			"Spell": "法术",
+			"Misc": "杂项",
+			"Health": "生命",
+			"Defense": "防御",
+			"SpellDC": "法术 DC",
+			"DexterityToAC": "敏上防",
+			"Speed": "速度",
+			"SavingThrow": "豁免",
+			"Ability": "属性",
+			"NaturalAC": "天生 AC",
+			"TouchAC": "接触 AC",
+			"Thrown": "投掷",
+			"ArmorMaxDex": "最大敏捷 (护甲)",
+			"ShieldMaxDex": "最大敏捷 (盾牌)",
+			"FlatfootedAC": "措手不及 AC",
+			"FlatfootedCMD": "措手不及 CMD",
+			"CarryMult": "负重倍率",
+			"StrSkills": "力量技能",
+			"DexSkills": "敏捷技能",
+			"ConSkills": "体质技能",
+			"IntSkills": "智力技能",
+			"WisSkills": "感知技能",
+			"ChaSkills": "魅力技能",
+			"SkillRanks": "技能等级",
+			"StrChecks": "力量检定",
+			"DexChecks": "敏捷检定",
+			"ConChecks": "体质检定",
+			"IntChecks": "智力检定",
+			"WisChecks": "感知检定",
+			"ChaChecks": "魅力检定",
+			"StrMod": "力量调整",
+			"DexMod": "敏捷调整",
+			"ConMod": "体质调整",
+			"IntMod": "智力调整",
+			"WisMod": "感知调整",
+			"ChaMod": "魅力调整",
+			"MeleeWeapon": "近战武器",
+			"RangedWeapon": "远程武器",
+			"ThrownWeapon": "投掷武器",
+			"Melee": "近战",
+			"Ranged": "远程",
+			"Natural": "天生",
+			"AllAblChecks": "属性检定",
+			"SpellResistance": "SR",
+			"Initiative": "先攻",
+			"Reflex": "反射",
+			"Fortitude": "强韧",
+			"Will": "意志",
+			"AllSaves": "所有豁免"
+		},
+		"School": {
+			"odd": "异",
+			"abj": "防护",
+			"con": "咒法",
+			"div": "预言",
+			"enc": "惑控",
+			"evo": "塑能",
+			"ill": "幻术",
+			"nec": "死灵",
+			"trs": "变化",
+			"uni": "通用",
+			"Unknown": "???"
+		},
+		"Module": {
+			"GMNotes": {
+				"NotesFound": "发现 GM 笔记。"
+			}
+		},
+		"Missing": {
+			"PF1": {
+				"Nonproficient": "未擅长",
+				"ForcedProficiency": "强制擅长",
+				"ConcentrationAbbr": "专注"
+			}
+		}
+	}
+}
