@@ -3,9 +3,9 @@
 
 ![Foundry Core Compatible Version](https://img.shields.io/badge/Foundry%20VTT-v13-orange) ![System](https://img.shields.io/badge/System-PF1e-blue) ![Language](https://img.shields.io/badge/Language-zh--cn-red)
 
-本项目致力于为 Foundry VTT 平台的 **Pathfinder 1e (PF1)** 系统及其常用模组提供简体中文本地化支持。
+本项目致力于为 Foundry VTT 平台的 **Pathfinder 1e (PF1)** 系统（暂时不包括PF1的图鉴，物品，法术，专长之类的。）及其常用模组提供简体中文本地化支持。
 
-本项目旨在整合分散的汉化资源，并补全 PF1e 系统更新带来的新文本空缺。
+
 
 ## 📦 汉化进度概览
 
@@ -51,7 +51,6 @@
     ```
     https://github.com/EzithiStar/xgg_mod_chn/releases/latest/download/module.json
     ```
-    *(请将上面的链接替换为您实际发布的 Manifest 链接)*
 4.  点击 **Install** 并启用模组。
 
 ## 🤝 贡献与反馈 (Contribution)
