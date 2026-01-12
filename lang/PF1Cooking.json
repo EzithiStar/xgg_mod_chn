@@ -1,0 +1,85 @@
+{
+  "TYPES": {
+    "Item": {
+      "pf1-cooking": {
+        "recipe": "食谱"
+      }
+    }
+  },
+  "PF1-Cooking": {
+    "Actions": {
+      "CookRecipe": "烹饪食谱"
+    },
+    "DC": {
+      "Cooking": "烹饪 DC",
+      "Improvising": "即兴烹饪 DC"
+    },
+    "Messages": {
+      "PrepDishSuccess": "{actor} <strong>成功</strong> 制作了 {item}",
+      "PrepDishFail": "{actor} <strong>搞砸</strong> 了 {item} - 真是浪费！",
+      "MissingIngredients": "原料不足"
+    },
+    "Recipes": {
+      "Single": "食谱",
+      "Plural": "食谱",
+      "Ingredients": {
+        "Single": "原料",
+        "Plural": "原料",
+        "Category": {
+          "basic": "基础",
+          "refined": "精制",
+          "exotic": "珍奇"
+        },
+        "Header": {
+          "basic": "基础原料",
+          "refined": "精制原料",
+          "exotic": "珍奇原料"
+        },
+        "Abrevation": {
+          "basic": "基",
+          "refined": "精",
+          "exotic": "珍"
+        }
+      },
+      "PrepTime": {
+        "Short": "准备时间",
+        "Full": "准备时间"
+      },
+      "EffectDuration": {
+        "Short": "效果持续",
+        "Full": "效果持续时间"
+      },
+      "Status": {
+        "available": "可用"
+      },
+      "Rarity": {
+        "Single": "稀有度",
+        "Subtype": {
+          "common": "普通",
+          "uncommon": "非普通",
+          "rare": "稀有",
+          "gourmet": "珍馐"
+        },
+        "Section": {
+          "common": "普通食谱",
+          "uncommon": "非普通食谱",
+          "rare": "稀有食谱",
+          "gourmet": "珍馐食谱"
+        }
+      }
+    },
+    "Settings": {
+      "autoRegisterBabel": {
+        "name": "使用 Babele 自动翻译",
+        "hint": "自动应用 Babele 内的翻译，无需手动引用包含翻译的目录。"
+      },
+      "enableMultiRecipeBuff": {
+        "name": "允许同时激活多个食谱增益",
+        "hint": "允许玩家同时拥有一个以上的食谱增益效果。"
+      }
+    },
+    "Skills": {
+      "ckg": "烹饪"
+    }  
+  }
+}
