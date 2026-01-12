@@ -9,9 +9,13 @@ PF1 Spellbook Generator
 spellcaster-utility-pf1
 PF1 Loot Sheet NPC
 
-额外：pf1系统，根据之前的汉化再补充了一点，可能有些地方不太对，因为这个系统翻译太多了，一个人搞不搞了，用了ai翻译，所以一些名字翻译可能不太“正规”，有问题请向我提出，会加紧修订。
+Koboldworks – Ready Up
+PF1 - Cooking 
+SBC (Statblock Converter) PF1
 
 汉化不完全（原因是作者没有给出翻译接口）：
 Koboldworks-Little Helper
 PF1-Improved-Conditions
-Koboldworks-actor-link
+
+额外：pf1系统，根据之前的汉化再补充了一点，可能有些地方不太对，因为这个系统翻译太多了，一个人搞不搞了，用了ai翻译，所以一些名字翻译可能不太“正规”，有问题请向我提出，会加紧修订。
+
