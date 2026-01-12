@@ -1,7 +1,7 @@
 {
 	"id":"xgg-mod-chn",
 	"title":"Translation: PF1中文 [Mod]",
-	"description":"本模组为 FVTT 的部分mod提供了汉化，目前的翻译PF1自用mod。",
+	"description":"本模组为 FVTT PF1的部分mod提供了汉化，目前翻译PF1自用mod。",
 	"authors":[
 		{
 			"name":"xgg",
@@ -79,11 +79,26 @@
 			"lang":"cn",
 			"name":"中文-pf1-system",
 			"path":"lang/pf1-system.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-StatblockConverter",
+			"path":"lang/StatblockConverter.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-PF1Cooking",
+			"path":"lang/PF1Cooking.json"
+		},
+		{
+			"lang":"cn",
+			"name":"中文-ReadyUp",
+			"path":"lang/ReadyUp.json"
 		}
 	],
 	"changelog":"",
-	"version":"0.1",
-	"url":"https://raw.githubusercontent.com/EzithiStar/xgg_mod_chn",
-	"manifest": "https://github.com/EzithiStar/xgg_mod_chn/releases/download/module.json",
-	"download": "https://github.com/EzithiStar/xgg_mod_chn/releases/download/pf1mod_cn.zip"
+	"version":"0.2",
+	"url":"https://github.com/EzithiStar/xgg_mod_chn",
+	"manifest": "https://github.com/EzithiStar/xgg_mod_chn/releases/latest/download/module.json",
+	"download": "https://github.com/EzithiStar/xgg_mod_chn/releases/download/v0.2/pf1mod_cn.zip"
 }
