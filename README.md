@@ -21,6 +21,9 @@
 *   **PF1 Spellbook Generator** (`SpellBookGenerator`)
 *   **Spellcaster Utility PF1** (`spellcaster-utility-pf1`)
 *   **PF1 Loot Sheet NPC** (`lootsheet-simple`)
+*   **Koboldworks – Ready Up** (`Ready-Up`)
+*   **PF1 - Cooking**  (`PF1-Cooking`)
+*   **SBC (Statblock Converter) PF1** (`Statblock-Converter`)(SBV与PF1系统一样，物品，日志，法术等均暂未翻译)
 
 ### ⚠️ 部分汉化 (Partially Translated)
 以下模组由于**原作者未开放完整的本地化接口 (Hardcoded Text)**，导致部分设置菜单或提示信息无法通过语言包进行翻译，需等待原模组更新支持：
